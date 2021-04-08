@@ -1,0 +1,58 @@
+.access-sector{
+    background-color: $dark-blue;
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -6rem;
+    color: $white;
+    padding: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    @include mobile{
+        max-width: 90%;
+        margin-top: 5rem;
+    }
+    h2{
+        opacity: 0.9;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        @include mobile{
+            margin-bottom: 2rem;
+        }
+    }
+    p{
+        opacity: 0.8;
+        margin-bottom: 2rem;
+    }
+    input{
+        width: 70%;
+        padding: 0.7rem 1rem;
+        border-radius: 50px;
+        @include xlarge{
+            margin-right: 1rem;
+
+            
+        }
+        @include tablet{
+            margin-bottom: 1rem;
+        }
+    }
+    a{
+        display: inline-block;
+        padding: 0.7rem  1rem;
+        background: linear-gradient(to right, (hsl(176, 68%, 64%), hsl(198, 60%, 50%)));
+        color: $white;
+        border-radius: 50px;
+        transition:  background 300ms ease-in-out;
+        @include mobile{
+            padding: 0.5rem 2.3rem;
+            margin-top: 1rem;
+        }
+         &:hover{
+            background: $accent-cyan-gradient;
+         }
+    }
+}

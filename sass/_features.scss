@@ -1,0 +1,51 @@
+.feature-section{
+    max-width: 80%;
+    margin:  0 auto;
+    text-align: center;
+    color: $white;
+    @include mobile{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4rem;
+    }
+    .feature-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 2em;
+        @include xlarge{
+            grid-column-gap: 2em;
+        }
+        @include tablet{
+            grid-column-gap: 2em;
+        }
+        @include mobile{
+            text-align: center;
+            grid-template-columns: 1fr;
+        }
+    }
+    .feature-image{
+        margin-bottom: 1rem;
+        @include mobile{
+            margin-bottom: 2rem;
+        }
+    }
+    .feature-title{
+        margin-bottom: 1rem;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.2rem;
+        @include mobile{
+            font-size: 1rem;
+        }
+    }
+    .feature-description{
+        opacity: 0.7;
+        margin-top: 1rem;
+        font-size: 1rem;
+        @include xlarge{
+            padding: 0 2em;
+        }
+        @include mobile{
+            font-size: 13px;
+        }
+    }
+}

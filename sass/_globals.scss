@@ -1,0 +1,58 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body,html{
+font-family: 'Open Sans', sans-serif;
+width: 100vw;
+height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Raleway', sans-serif;
+}
+
+main{
+    background-color: $dark-blue-main;
+    padding-bottom: 4rem;
+    @include mobile{
+        padding-bottom: 15rem;
+    }
+}
+
+.cta-btn{
+        display: inline-block;
+        padding: 13px  5rem;
+        background: linear-gradient(to right, (hsl(176, 68%, 64%), hsl(198, 60%, 50%)));
+        color: $white;
+        border-radius: 50px;
+        transition:  background 300ms ease-in-out;
+         &:hover{
+            background: $accent-cyan-gradient;
+         }
+        }
+
+
+.fa, .fas {
+    font-weight: 900;
+}
+.flex{
+    display: flex;
+    &-jc-sb{
+        justify-content: space-between;
+    }
+    &-ai-center{
+        align-items: center;
+    }
+    &-jc-c{
+        justify-content: center;
+    }
+}

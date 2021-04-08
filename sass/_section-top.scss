@@ -1,0 +1,56 @@
+.section-top{
+    margin-bottom: 3rem;
+    text-align: center;
+    img{
+        max-width: 100%;
+        @include mobile{
+            width: 80%;
+        }
+    }
+    h1{
+        font-size: 2rem;
+        color: $white;
+        opacity: 0.9;
+        padding: 2rem;
+        line-height: 1.4;
+        @include tablet{
+            width: 85%;
+            margin: 0 auto;
+        }
+        @include xlarge{
+            width: 50%;
+            margin: 0 auto;
+        }
+        @include mobile{
+            opacity: 1;
+            font-size: 1.5rem;
+        }
+    }
+    p{
+        color: $white;
+        opacity: 0.8;
+        line-break: 1.3;
+        margin-bottom: 2rem;
+        @include tablet{
+            width: 65%;
+            margin-bottom: 1em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include xlarge{
+        font-size: 1.3rem;
+        margin-left:  auto;
+        margin-right:  auto;
+        width:47%;
+        
+    }
+    @include mobile{
+        font-size: 0.8rem;
+        padding: 0 2rem;
+        }
+    }
+    .cta-btn{
+        margin-bottom: 2rem;
+    }
+
+}

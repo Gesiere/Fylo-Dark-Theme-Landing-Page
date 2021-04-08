@@ -1,0 +1,94 @@
+.footer{
+    background-color: $dark-blue-footer-BG;
+    padding: 8rem 3rem 3rem  6rem;
+    color: $white;
+    @include mobile{
+       padding: 17rem 2rem 2rem;
+    }
+    @include tablet{
+        padding-top: 15rem;
+    }
+    .footer-content{
+        margin-bottom: 2rem;
+        .footer-logo{
+            img{
+                @include xlarge{
+                    width: 6rem;
+                }
+            }
+        }
+    }
+    .footer-infos{
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-column-gap: 5rem;
+        opacity: 0.8;
+        margin-top: 4rem;
+        @include mobile{
+            grid-template-columns: 1fr;
+            grid-row-gap: 3em;
+        }
+        @include tablet{
+            grid-template-columns: 1fr;
+            grid-row-gap: 3em;
+        }
+        .footer-description{
+            display: flex;
+
+            p{
+                margin-left: 1rem;
+                @include xlarge{
+                    font-size: 0.8;
+                }
+            }
+    
+        }
+        .footer-contact{
+            .footer-email{
+                margin-top: 1rem;
+            }
+            span{
+                margin-left: 1rem;
+            }
+        }
+    }
+    .footer-list1,
+    .footer-list2{
+        li{
+            list-style: none;
+            line-height: 1.8;
+        }
+        a{
+            color: $white;
+            opacity: 0.8;
+            transition: opacity 300ms ease-out;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+
+    .social-links{
+
+        @include mobile{
+            text-align: center;
+
+        }
+        a{
+        display: inline-block;
+        color: $white;
+        border: 2px solid $white;
+        padding: 5px 10px;
+        border-radius: 50px;
+        transition: all 300ms ease-in-out;
+        &:not(:last-child){
+            margin-right: 1rem;
+        }
+        &:hover{
+            color: $accent-cyan-gradient;
+            border: 2px solid $accent-cyan-gradient;
+        }
+        }
+    }
+}
+   

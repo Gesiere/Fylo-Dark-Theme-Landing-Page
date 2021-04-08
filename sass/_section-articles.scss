@@ -1,0 +1,55 @@
+.section-articles{
+    background-image: url('/images/bg-quotes.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 30px;
+    color: $white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2em;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0 5rem;
+    @include mobile{
+        grid-template-columns: 1fr;
+        margin: 0 3rem;
+    }
+    .section-article{
+        background-color: $dark-blue-testimoinial-BG;
+        border-radius: 5px;
+        padding: 2rem;
+        margin-bottom: 8rem;
+        @include mobile{
+            margin-bottom: 0;
+        }
+        .article-description{
+            font-size: 0.9375rem;
+            line-height: 1.6;
+            opacity: 0.8;
+            @include mobile{
+                font-size: 0.875rem;
+            }
+        }
+        
+    }
+    .article-flex{
+        margin-top: 2em;
+        display: flex;
+        .article-ceo{
+            margin-left: 1rem;
+        }
+        
+        img{
+            border-radius: 50px;
+            width: 3.125rem;
+        }
+        .article-author{
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+        .article-author-position{
+            font-size: 0.75rem;
+            opacity: 0.8;
+        }
+    }
+}
